@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <%=userinfo%>
+    </title>
+</head>
+
+<body>
+    这是一个ejs的模板引擎
+    <h2>
+        <%=title%>
+    </h2>
+
+    <hr><br>
+
+    <ul>
+        <!-- 绑定list数据 -->
+        <%for(var i=0;i<lis.length;i++){%>
+            <!-- 遍历数组 -->
+            <li>
+                <%=lis[i]%>
+            </li>
+            <%}%>
+    </ul>
+</body>
+
+</html>

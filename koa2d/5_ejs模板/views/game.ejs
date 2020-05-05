@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <%=userinfo%>
+    </title>
+</head>
+
+<body>
+    <div>
+        <%- include('public/head');%>
+    </div>
+    这是一个ejs的模板引擎
+    <h2>
+        <%=title%>
+    </h2>
+
+    <hr><br>
+
+    <ul>
+        <!-- 绑定list数据 -->
+        <!-- 遍历数组 -->
+        <%for(var i=0;i<lis.length;i++){%>
+            <li>
+                <%=lis[i]%>
+            </li>
+            <%}%>
+    </ul>
+
+    <hr> <br>
+    <div>
+        <%-h%>
+    </div>
+    <!-- 绑定 html数据 -->
+
+
+    <h2></h2>
+
+    <hr><br/>
+    <!-- if判断 -->
+    <%if(num<10){%>
+        <h3>num小于10</h3>
+        <%}else{%>
+            <h3>num大于10</h3>
+            <%}%>
+</body>
+
+</html>

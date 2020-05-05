@@ -1,0 +1,22 @@
+/*
+    1.cookie保存在浏览器客户端
+
+    2.可以让我们用同一个浏览器访问同一个域 名的时候共享数据
+
+
+/*
+    1、保存用户信息
+    2、浏览器历史记录
+    3、猜你喜欢的功能
+    4、10天免登陆
+    5、多个页面之间的数据传递
+    6、cookie实现购物车功能
+
+ ctx.cookies.set('userinfo','zhangsan',{
+    maxAge:60*1000*60
+ });
+
+ var userinfo=ctx.cookies.get('userinfo');
+
+
+*/
